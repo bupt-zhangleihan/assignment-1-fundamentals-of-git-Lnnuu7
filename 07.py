@@ -39,7 +39,7 @@ df['Rt'] = df['ninfected'].rolling(8).apply(lambda x: x[4:].sum()/x[:4].sum())
 df['Rt'].plot()
 plt.show()
 
-df = mkframe('UK')
+df = mkframe('Australia')
 
 df['ninfected'] = df['infected'].diff()
 df['ninfected'].plot()
@@ -66,7 +66,7 @@ df['Rt'] = df['ninfected'].rolling(8).apply(lambda x: x[4:].sum()/x[:4].sum())
 df['Rt'].plot()
 plt.show()
 
-df = mkframe('US')
+df = mkframe('Albania')
 
 df['ninfected'] = df['infected'].diff()
 df['ninfected'].plot()
